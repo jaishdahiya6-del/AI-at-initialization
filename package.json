@@ -1,0 +1,15 @@
+{
+  "name": "ai-atmosphere-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently -n server,client -c red,yellow \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w server && npm run build -w client",
+    "test": "npm run test -w server && npm run test -w client",
+    "train": "npm run train -w server",
+    "backfill": "npm run backfill -w server",
+    "collect": "npm run collect -w server"
+  },
+  "devDependencies": { "concurrently": "^9.0.1" }
+}

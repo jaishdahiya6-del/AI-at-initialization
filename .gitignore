@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+*.log
+logs
+trained-models/*
+!trained-models/.gitkeep
+datasets/*
+!datasets/.gitkeep

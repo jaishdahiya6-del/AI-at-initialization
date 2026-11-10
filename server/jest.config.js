@@ -1,0 +1,1 @@
+module.exports = { testEnvironment: 'node', setupFiles: ['<rootDir>/tests/setup.ts'], testMatch: ['<rootDir>/tests/**/*.test.ts'], transform: { '^.+\\.ts$': ['ts-jest', { isolatedModules: true, diagnostics: false }] } };
